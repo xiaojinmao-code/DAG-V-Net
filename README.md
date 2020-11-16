@@ -20,43 +20,43 @@ Some important required packages include:
 
 ## Usages
 ### Data
-1. First, you can download the dataset at [HC-18][data_link]. We used HC-18 task training dataset, To preprocess the dataset and save as ".npy", run:
+First, you can download the dataset at [HC-18][data_link]. 
+* Download the HC-18 training set that consists of 999 2D ultrasound images and their annotations. 
+* Download the HC-18 test set that consists of 335 2D ultrasound images.  
 
 ![img_src](./pictures/HC18.png)
-Fig. 1. The official sample.
-
-
-
+Fig. 2. The official data sample.
 
 [data_link]:https://hc18.grand-challenge.org/
 
-```
-python isic_preprocess.py 
-```
 
 ### Preprocessing
+* The annotation of this dataset are contours. We need to convert them into binary masks for segmentation.
+```
+python get_ground_truth.py
+```
 
+* data augmentation.
+```
+python augtest.py
+```
 ### Train
+To train DAG-Net in HC-18.
+```
+python main.py
+```
 
 ### Test
+To evaluate the trained model in ISIC 2018 (we added a test data in folder0, testing the 0th-fold validation for example), run:
+```
+python validation.py
+```
+
+## Result
 ![uncertainty](./pictures/comparison.jpg)
 Fig. 2. Fetal head segmentation.
 
-2. For conducting 5-fold cross-validation, split the preprocessed data into 5 fold and save their filenames. run:
-```
-python create_folder.py 
-```
 
-
-2. To train CA-Net in ISIC 2018 (taking 1st-fold validation for example), run:
-```
-python main.py --data ISIC2018 --val_folder folder1 --id Comp_Atten_Unet
-```
-
-3. To evaluate the trained model in ISIC 2018 (we added a test data in folder0, testing the 0th-fold validation for example), run:
-```
-python validation.py --data ISIC2018 --val_folder folder0 --id Comp_Atten_Unet
-```
 Our experimental results are shown in the table:
 ![refinement](./pictures/skin_segmentation_results_table.png)
 
@@ -64,15 +64,26 @@ Our experimental results are shown in the table:
 ```
 python show_fused_heatmap.py
 ```
-Visualzation of spatial attention weight map:
-![refinement](./pictures/spatial_atten_weight.png)
-
-Visualzation of scale attention weight map:
-![refinement](./pictures/scale_atten_weight.png)
 
 ## Acknowledgement
 Part of the code is revised from [Attention-Gate-Networks][AG].
 
 [AG]:https://github.com/ozan-oktay/Attention-Gated-Networks
+
+## Contact
+* email:799633204@qq.com
+* wechat:18752726918
+* QQ:799633204
+* [CSDN]:[web_link]
+
+
+[web_link]:https://hc18.grand-challenge.org/
+
+
+
+
+
+
+
 
 
