@@ -9,24 +9,20 @@ Fig. 1. Structure of DAG V-Net.
 ![uncertainty](./pictures/comparison.jpg)
 Fig. 2. Fetal head segmentation.
 
-![refinement](./pictures/fetal_mri_results.png)
-
-Fig. 3. Placenta and fetal brain segmentation.
 
 ### Requirementss
 Some important required packages include:
-* [Pytorch][torch_link] version >=0.4.1.
+* [Tensorflow][tensor_link] version >=1.12.0.
 * Visdom
-* Python == 3.7 
+* Python == 3.6 
 * Some basic python packages such as Numpy.
 
-Follow official guidance to install [Pytorch][torch_link].
 
-[torch_link]:https://pytorch.org/
+[tensor_link]:https://tensorflow.google.cn/
 
 ## Usages
-### For skin lesion segmentation
-1. First, you can download the dataset at [ISIC 2018][data_link]. We only used ISIC 2018 task1 training dataset, To preprocess the dataset and save as ".npy", run:
+### For Fetal Head segmentation
+1. First, you can download the dataset at [HC-18][data_link]. We used HC-18 task training dataset, To preprocess the dataset and save as ".npy", run:
 
 [data_link]:https://challenge.isic-archive.com/data#2018
 
