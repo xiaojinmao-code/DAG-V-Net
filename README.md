@@ -1,5 +1,5 @@
 ## DAG V-Net
-The code will be constantly updated(!!!)
+The code will be constantly updated(!!!2020-11-16!!!)
 
 This repository provides the code for "Fetal ultrasound image segmentation for automatic head circumference biometry using deeply-supervised attention-gated V-Net". Our work now is Accepted by the Journal of Digital Imaging.
 
@@ -74,7 +74,7 @@ Part of the code is revised from [Attention-Gate-Networks][AG].
 * email:799633204@qq.com
 * wechat:18752726918
 * QQ:799633204
-* [CSDN]:[web_link]
+* [CSDN][web_link].
 
 
 [web_link]:https://hc18.grand-challenge.org/
