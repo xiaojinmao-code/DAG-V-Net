@@ -6,29 +6,42 @@ This repository provides the code for "Fetal ultrasound image segmentation for a
 ![img_net](./pictures/model.jpg)
 Fig. 1. Structure of DAG V-Net.
 
-![uncertainty](./pictures/comparison.jpg)
-Fig. 2. Fetal head segmentation.
 
 
 ### Requirementss
 Some important required packages include:
-* [Tensorflow][tensor_link] version >=1.12.0.
-* Visdom
-* Python == 3.6 
-* Some basic python packages such as Numpy.
+* tensorflow version >=1.12.0.
+* opencv-python >=3.3.0
+* pandas >=0.20.1
+* python >= 3.6 
+* Some basic python packages such as SimpleITK.
 
 
-[tensor_link]:https://tensorflow.google.cn/
 
 ## Usages
-### For Fetal Head segmentation
+### Data
 1. First, you can download the dataset at [HC-18][data_link]. We used HC-18 task training dataset, To preprocess the dataset and save as ".npy", run:
 
-[data_link]:https://challenge.isic-archive.com/data#2018
+![img_src](./pictures/HC18.png)
+Fig. 1. The official sample.
+
+
+
+
+[data_link]:https://hc18.grand-challenge.org/
 
 ```
 python isic_preprocess.py 
 ```
+
+### Preprocessing
+
+### Train
+
+### Test
+![uncertainty](./pictures/comparison.jpg)
+Fig. 2. Fetal head segmentation.
+
 2. For conducting 5-fold cross-validation, split the preprocessed data into 5 fold and save their filenames. run:
 ```
 python create_folder.py 
