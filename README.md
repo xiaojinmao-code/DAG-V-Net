@@ -3,14 +3,11 @@ The code will be constantly updated(!!!)
 
 This repository provides the code for "Fetal ultrasound image segmentation for automatic head circumference biometry using deeply-supervised attention-gated V-Net". Our work now is Accepted by the Journal of Digital Imaging.
 
+![img_net](./pictures/model.jpg)
+Fig. 1. Structure of DAG V-Net.
 
-[paper_link]:https://arxiv.org/pdf/2009.10549.pdf
-
-![mg_net](./pictures/canet_framework.png)
-Fig. 1. Structure of CA-Net.
-
-![uncertainty](./pictures/skin_results.png)
-Fig. 2. Skin lesion segmentation.
+![uncertainty](./pictures/comparison.jpg)
+Fig. 2. Fetal head segmentation.
 
 ![refinement](./pictures/fetal_mri_results.png)
 
