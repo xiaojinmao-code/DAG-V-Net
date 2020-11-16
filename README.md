@@ -1,5 +1,5 @@
 ## DAG V-Net
-The code will be constantly updated(!!!2020-11-16!!!)
+### The code will be constantly updated(!!!2020-11-16!!!)
 
 This repository provides the code for "Fetal ultrasound image segmentation for automatic head circumference biometry using deeply-supervised attention-gated V-Net". Our work now is Accepted by the Journal of Digital Imaging.
 
@@ -47,7 +47,7 @@ python main.py
 ```
 
 ### Test
-To evaluate the trained model in ISIC 2018 (we added a test data in folder0, testing the 0th-fold validation for example), run:
+To evaluate the trained model in HC-18.
 ```
 python validation.py
 ```
@@ -57,13 +57,6 @@ python validation.py
 Fig. 2. Fetal head segmentation.
 
 
-Our experimental results are shown in the table:
-![refinement](./pictures/skin_segmentation_results_table.png)
-
-4. You can save the attention weight map in the middle step of the network to '/result' folder. Visualizing the attention weight above the original images, run:
-```
-python show_fused_heatmap.py
-```
 
 ## Acknowledgement
 Part of the code is revised from [Attention-Gate-Networks][AG].
