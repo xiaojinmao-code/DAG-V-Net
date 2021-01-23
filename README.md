@@ -1,5 +1,5 @@
 ## DAG V-Net
-### The code will be constantly updated(!!!2020-11-27!!!)
+### The code will be constantly updated(!!!2021-1-23!!!)
 
 This repository provides the code for "Fetal ultrasound image segmentation for automatic head circumference biometry using deeply-supervised attention-gated V-Net". Our work now is Accepted by the Journal of Digital Imaging.
 
